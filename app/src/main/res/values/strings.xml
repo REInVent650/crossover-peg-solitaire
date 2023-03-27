@@ -1,0 +1,4 @@
+<resources>
+	<string name="app_name" translatable="false">Crossover Puzzle</string>
+	<string name="locked_board">Board is locked, press restart to continue.</string>
+</resources>

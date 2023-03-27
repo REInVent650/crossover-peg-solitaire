@@ -1,0 +1,692 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
+			<LinearLayout
+				android:id="@+id/linear1"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear28"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:background="#FF5722"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#FF5722"
+						android:text="Achievements              "
+						android:textSize="25sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:layout_gravity="center_vertical"
+						android:layout_weight="5" />
+					<Button
+						android:id="@+id/exit"
+						android:layout_width="120dp"
+						android:layout_height="60dp"
+						android:layout_margin="5dp"
+						android:padding="5dp"
+						android:background="#795548"
+						android:text="Leaderboards"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:layout_weight="1" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear27"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/name"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Name"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/totalxp"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text="Total XP:"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon1"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview1"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover once.\n                                                             500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon2"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview2"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover twice.\n                                                              500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon3"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview3"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover five times.\n                                                              1500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear4"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon4"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview4"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover ten times.\n                                                               2500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear5"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon5"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview5"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover twenty-five times.\n                                                                7500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon6"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview6"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover fifty times.\n                                                              12500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear7"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon7"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview7"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover seventy five times.\n                                                             12500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear8"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon8"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview8"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover one hundred times.\n                                                               12500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear9"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon9"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/final_blank_peg"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview9"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover one hundred and twenty five times.  -  12500 XP\n"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear10"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon10"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview10"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover one hundred and fifty times.  -  12500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear11"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon11"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview11"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover one hundred and seventy five times.                                                   12500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear12"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon12"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview12"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover two hundred times  -  12500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear13"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon13"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview13"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover two hundred and twenty five times  -  12500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear14"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon14"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview14"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover two hundred and fifty times  -  12500 XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear15"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon15"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/timer"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview15"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover in less than one hour\n500XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear16"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon16"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/timer"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview16"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover in less than half an hour\n500XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear17"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon17"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/timer"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview17"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover in less than ten minutes\n500XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear18"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon18"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/timer"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview18"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover in less than five minutes\n1500XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear19"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon19"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/timer"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview19"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover in less than two minutes\n2000XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear20"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon20"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/timer"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview20"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover in less than one minute\n5000XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear21"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon21"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/timer"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview21"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Solve Crossover in less than thirty seconds\n10000XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear22"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon22"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview22"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Connect to MPADGAMEHQ Server\n5000XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear23"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon23"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview23"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Complete 20%of the achievements\n10000XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear24"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon24"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview24"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Complete 60% of the achievements\n20000XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/achievementlinear25"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#FFC107"
+					android:orientation="horizontal">
+					<ImageView
+						android:id="@+id/achievementicon25"
+						android:layout_width="50dp"
+						android:layout_height="50dp"
+						android:background="@drawable/icon2"
+						android:src="@drawable/icon2"
+						android:scaleType="fitCenter" />
+					<TextView
+						android:id="@+id/achievementextview25"
+						android:layout_width="match_parent"
+						android:layout_height="match_parent"
+						android:padding="8dp"
+						android:gravity="center_vertical"
+						android:text="Complete 100% of the achievements\n20000XP"
+						android:textSize="14sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+				</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
